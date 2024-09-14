@@ -1,0 +1,7 @@
+applications:
+- name: sap-genaihub-based-simplechatbot
+  memory: 512M
+  instances: 1
+  buildpacks:
+      - python_buildpack
+  command: streamlit run 09.sap-genaihub-based-chatbot.py --server.port ${PORT} --server.address 0.0.0.0

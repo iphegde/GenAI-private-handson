@@ -1,0 +1,36 @@
+
+Consume Generative AI Models
+The generative AI hub helps you to complete tasks like summarizing text, inferencing, and transforming content. To do so, you consume a generative AI model by sending a request to the model's endpoint.
+
+https://help.sap.com/docs/sap-ai-core/sap-ai-core-service-guide/consume-generative-ai-models-using-sap-ai-core
+
+
+Check Postman for more details
+
+example> gpt 4o
+# Request
+# ---
+curl --location '$DEPLOYMENT_URL/chat/completions?api-version=2023-05-15' \
+--header 'AI-Resource-Group: <Resource Group Id>' \
+--header 'Content-Type: application/json' \
+--header "Authorization: Bearer $AUTH_TOKEN" \
+--data '{
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+           {
+              "type": "text",
+              "text": "Describe this picture:"
+           },
+           {
+              "type": "image_url",
+              "image_url": {
+                 "url": "https://path/images/image.png"
+              }
+          }
+        ]
+      }
+    ],
+    "max_tokens": 10
+}'

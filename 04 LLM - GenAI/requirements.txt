@@ -1,0 +1,18 @@
+langchain
+langchain-community
+langchain-core
+langchain-openai
+openai
+python-dotenv
+fastapi
+langserve
+sse_starlette
+streamlit
+langchain_core
+pypdf
+hdbcli
+
+generative-ai-hub-sdk[all]
+generative-ai-hub-sdk[google, amazon]
+generative-ai-hub-sdk[google_langchain]
+

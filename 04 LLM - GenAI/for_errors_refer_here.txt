@@ -1,0 +1,14 @@
+Select the Correct Python Interpreter in VS Code:
+
+Open the Command Palette in VS Code by pressing Ctrl + Shift + P 
+(or Cmd + Shift + P on macOS).
+Type and select "Python: Select Interpreter".
+
+Choose the Python interpreter that points to your virtual environment 
+(e.g., llmenv).
+Reload VS Code or the Python Extension:
+
+Sometimes, VS Code needs a reload to recognize changes in the environment. 
+You can reload the window by opening the Command Palette 
+(Ctrl + Shift + P or Cmd + Shift + P on macOS) and selecting
+ "Developer: Reload Window".

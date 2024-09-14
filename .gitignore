@@ -1,0 +1,2 @@
+# Exclude SampleData folder and all CSV files inside it
+SampleData/*.csv
